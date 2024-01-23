@@ -1,0 +1,26 @@
+---
+import Header from '../components/Header.astro';
+
+interface Props{
+    description: string;
+    title: string;
+}
+
+const { description, title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content={ description } />
+        <meta name="viewport" content="width=device-width" />
+        <title>{title}</title>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+
+    </head>
+    <body>
+        <Header />
+        <slot />
+    </body>
+</html>
