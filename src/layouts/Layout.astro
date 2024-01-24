@@ -24,3 +24,13 @@ const { description, title } = Astro.props;
         <slot />
     </body>
 </html>
+
+<style is:global>
+    :root{
+        color-scheme: dark;
+    }
+    html{
+        font-family: system-ui, -apple-system, sans-serif;
+        background: #111e31;
+    }
+</style>
